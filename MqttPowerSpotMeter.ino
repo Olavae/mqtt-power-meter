@@ -23,7 +23,7 @@
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 #define OLED_RESET     -1 // Reset pin # (or -1 if sharing Arduino reset pin)
 
-//OLED display
+//OLED display (Uses GPIO5 (D1) (SCL) and GPIO4 (D2) (SDA) as standard
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 // Neopixels / ws2812 compatible leds
